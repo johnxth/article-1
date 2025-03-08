@@ -11,6 +11,19 @@
             margin-bottom: 50px;
             padding: 50px;
         }
+        .skills-list {
+            column-count: 1;
+        }
+        @media (min-width: 768px) {
+            .skills-list {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .skills-list {
+                column-count: 3;
+            }
+        }
         @media print {
             body, html {
                 margin: 0;
@@ -43,7 +56,7 @@
 </head>
 <body class="bg-light">
     <div class="container py-5">
-        <marquee class="text-primary fw-bold mb-3">Selamat datang di <button class="btn btn-primary text-white" disabled>CV Saya!</button></marquee>
+        <marquee class="text-primary fw-bold mb-3">👋 Selamat datang di <button class="btn btn-primary text-white" disabled>CV Saya!</button></marquee>
         <div class="card shadow-lg p-5">
             <h1 class="text-center text-primary">Nama Anda</h1>
             <p class="text-center fw-bold">Manual Quality Assurance Tester | Eks-Guru & Admin IT</p>
@@ -59,11 +72,14 @@
             <p>Lulusan terbaru dari kursus <strong>Manual QA Tester</strong> dengan pengalaman mengajar dan mengelola sistem IT di institusi pendidikan.</p>
             <hr>
             <h2 class="text-center text-primary">Keahlian</h2>
-            <ul>
+            <ul class="skills-list">
                 <li>Quality Assurance: Test case design, bug reporting, test execution</li>
                 <li>Teknologi: Linux (Debian, Proxmox), aaPanel, ZeroTier, Tailscale</li>
                 <li>Jaringan & Server: Administrasi jaringan, server virtualisasi, VPN setup</li>
                 <li>Pendidikan & Pelatihan: Mengajar Fisika, Teknik Instalasi Listrik, dan Teknologi Informasi</li>
+                <li>Automasi Pengujian: Selenium, Postman API Testing</li>
+                <li>Pemrograman Dasar: Python, HTML, CSS</li>
+                <li>Manajemen Database: MySQL, PostgreSQL</li>
             </ul>
             <hr>
             <h2 class="text-center text-primary">Pendidikan</h2>
